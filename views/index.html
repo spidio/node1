@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>spid.io - An MMO Modable game like agar.io but with spiders or something like that.</title>
+	<link rel="stylesheet" href="static/css/main.css">
+</head>
+<body onload="main();">
+	<canvas id="canvas"></canvas>
+	<div id="discon_div">
+		You have been disconnected from the server.<br><br>
+		We will try to reconnect you in a few seconds...
+	</div>
+	<img id="img-spider-black" src="static/img/funny-spider.png">
+	<img id="img-spider-blue" src="static/img/cute-spider.png">
+</body>
+<scripts>
+	<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+	<script src="static/js/main.js"></script>
+	<script src="static/js/Game.js"></script>
+	<script src="static/js/GameEvents.js"></script>
+	<script src="static/js/Spider.js"></script>
+	<script src="static/js/Vector.js"></script>
+	<script src="static/js/Camera.js"></script>
+	<script src="static/js/CanvasPixels.js"></script>
+	<script src="static/js/SpidSocket.js"></script>
+	<script src="static/js/Sprite.js"></script>
+</scripts>
+</html>

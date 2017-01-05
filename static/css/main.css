@@ -1,0 +1,25 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	overflow: hidden;
+}
+
+#canvas {
+	width: 100vw;
+	height: 100vh;
+	border-bottom: 2px solid black;
+}
+
+#discon_div {
+	display: none;
+	width: calc(100vw - 100px);
+	height: 100vh;
+	font-size: 28px;
+	padding-top: 100px;
+	padding-left: 50px;
+	padding-right: 50px;
+	text-align: center;
+}

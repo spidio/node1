@@ -1,0 +1,84 @@
+You know the way if you have a number, say 100.
+If you increase it 1% every second, after 10 seconds it will be: 111.6 (approx)
+If you increase it 10% every 10 seconds, after 10 sconds it will be: 110
+
+In my game I have a similar situation to this, but depending on the framerate of the game, it will affect the results slightly...
+
+if delta time is 10, then I would increase 10%... if delta time is 1, then I would increase 1%... if delta time is 500, then I would increase 500% (i.e. massive framerate drop because of sudden big event)
+
+How would I fix this do you know?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+In this game I am not increasing a number by percentage but I am using the lerp function. Do you know what lerp is? If not I will explain! :)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Solution:
+
+WRONG...
+
+if dt is 1: increase 1%
+if dt is 10: increase 10%
+
+CORRECT...
+
+if dt is 1: incresae 1%.
+if dt is 10: increase 1%, increase 1%, increase 1%, increase 1%, increase 1%, increase 1%, increase 1%, increase 1%, increase 1%, increase 1%.
